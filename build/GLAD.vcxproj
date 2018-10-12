@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EFA07111-6FCC-304D-83A8-48314D2E2CAE}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>GLAD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gitaliyun\OpenWater\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GLAD.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GLAD_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gitaliyun\OpenWater\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GLAD.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GLAD</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\gitaliyun\OpenWater\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">GLAD.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">GLAD</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\gitaliyun\OpenWater\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">GLAD.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">GLAD</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gitaliyun\OpenWater\includes;D:\gitaliyun\OpenWater\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gitaliyun\OpenWater\includes;D:\gitaliyun\OpenWater\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitaliyun\OpenWater\includes;D:\gitaliyun\OpenWater\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gitaliyun\OpenWater\includes;D:\gitaliyun\OpenWater\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gitaliyun\OpenWater\includes;D:\gitaliyun\OpenWater\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitaliyun\OpenWater\includes;D:\gitaliyun\OpenWater\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gitaliyun\OpenWater\includes;D:\gitaliyun\OpenWater\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gitaliyun\OpenWater\includes;D:\gitaliyun\OpenWater\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitaliyun\OpenWater\includes;D:\gitaliyun\OpenWater\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gitaliyun\OpenWater\includes;D:\gitaliyun\OpenWater\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gitaliyun\OpenWater\includes;D:\gitaliyun\OpenWater\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitaliyun\OpenWater\includes;D:\gitaliyun\OpenWater\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gitaliyun\OpenWater\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/gitaliyun/OpenWater/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -HD:/gitaliyun/OpenWater -BD:/gitaliyun/OpenWater/build --check-stamp-file D:/gitaliyun/OpenWater/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gitaliyun/OpenWater/CMakeLists.txt;D:\gitaliyun\OpenWater\CMakeLists.txt;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeSystem.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeCCompiler.cmake;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeCXXCompiler.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeRCCompiler.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;D:\gitaliyun\OpenWater\cmake\modules\FindGLFW3.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\gitaliyun\OpenWater\config\root_directory.h.in;D:\gitaliyun\OpenWater\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gitaliyun\OpenWater\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/gitaliyun/OpenWater/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -HD:/gitaliyun/OpenWater -BD:/gitaliyun/OpenWater/build --check-stamp-file D:/gitaliyun/OpenWater/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gitaliyun/OpenWater/CMakeLists.txt;D:\gitaliyun\OpenWater\CMakeLists.txt;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeSystem.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeCCompiler.cmake;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeCXXCompiler.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeRCCompiler.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;D:\gitaliyun\OpenWater\cmake\modules\FindGLFW3.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\gitaliyun\OpenWater\config\root_directory.h.in;D:\gitaliyun\OpenWater\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gitaliyun\OpenWater\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/gitaliyun/OpenWater/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -HD:/gitaliyun/OpenWater -BD:/gitaliyun/OpenWater/build --check-stamp-file D:/gitaliyun/OpenWater/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/gitaliyun/OpenWater/CMakeLists.txt;D:\gitaliyun\OpenWater\CMakeLists.txt;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeSystem.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeCCompiler.cmake;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeCXXCompiler.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeRCCompiler.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;D:\gitaliyun\OpenWater\cmake\modules\FindGLFW3.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\gitaliyun\OpenWater\config\root_directory.h.in;D:\gitaliyun\OpenWater\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\gitaliyun\OpenWater\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/gitaliyun/OpenWater/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -HD:/gitaliyun/OpenWater -BD:/gitaliyun/OpenWater/build --check-stamp-file D:/gitaliyun/OpenWater/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/gitaliyun/OpenWater/CMakeLists.txt;D:\gitaliyun\OpenWater\CMakeLists.txt;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeSystem.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeCCompiler.cmake;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeCXXCompiler.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;D:\gitaliyun\OpenWater\build\CMakeFiles\3.10.1\CMakeRCCompiler.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;D:\gitaliyun\OpenWater\cmake\modules\FindGLFW3.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;F:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\gitaliyun\OpenWater\config\root_directory.h.in;D:\gitaliyun\OpenWater\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\gitaliyun\OpenWater\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\gitaliyun\OpenWater\openwater\glad.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\gitaliyun\OpenWater\build\ZERO_CHECK.vcxproj">
+      <Project>{912B33D5-E103-317B-80EB-81DF2CFE5D62}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
