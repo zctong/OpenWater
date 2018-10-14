@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 2.8)
 cmake_policy(VERSION 2.8)
 
-project (LearnOpenGL)
+project (OpenWater)
 
 # debug/release 环境设置
 SET(CMAKE_DEBUG_POSTFIX "_d" CACHE STRING "add a postfix, usually d on windows")  
