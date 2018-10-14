@@ -44,10 +44,6 @@ set(1.getting_started
 # then create a project file per tutorial
 foreach(CHAPTER ${CHAPTERS})
     foreach(DEMO ${${CHAPTER}})
-        file(GLOB SOURCE
-            "openwater/${CHAPTER}/${DEMO}/*.h"
-            "openwater/${CHAPTER}/${DEMO}/*.cpp"
-        )
 		file(GLOB SHADERS
                  "openwater/${CHAPTER}/${DEMO}/*.vs"
                  "openwater/${CHAPTER}/${DEMO}/*.fs"
@@ -69,23 +65,15 @@ foreach(CHAPTER ${CHAPTERS})
 		message(STATUS, ${ALLFILE}, "所有文件")
         add_executable(${NAME} ${ALLFILE})
         target_link_libraries(${NAME} ${LIBS})
-		
 		add_dependencies(${NAME} glfw)		#添加工程编译依赖，不知道为啥glad默认关联了
-        
-		#set_target_properties(${NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin/")
         
 		# copy shader files to build directory
         add_custom_command(TARGET ${NAME} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E make_directory $<TARGET_FILE_DIR:${NAME}>)
 		set(RESBASEPATH $<TARGET_FILE_DIR:${NAME}>)
 		add_custom_command(TARGET ${NAME} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E make_directory "${RESBASEPATH}/resources")
         foreach(SHADER ${SHADERS})
-			# configure_file(${SHADER} "test")
-			#add_custom_command(TARGET ${NAME} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E remove -f $<TARGET_FILE_DIR:${NAME}>)
 			add_custom_command(TARGET ${NAME} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${SHADER} $<TARGET_FILE_DIR:${NAME}>)
 		endforeach(SHADER)
-		foreach(DLL ${DLLFILE})
-			add_custom_command(TARGET ${NAME} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${DLL} $<TARGET_FILE_DIR:${NAME}>)
-        endforeach(DLL)
 		add_custom_command(TARGET ${NAME} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_SOURCE_DIR}/resources" "${RESBASEPATH}/resources")
 		
     endforeach(DEMO)
