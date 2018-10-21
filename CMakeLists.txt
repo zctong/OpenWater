@@ -52,65 +52,6 @@ message(STATUS, ${LIBS})
 include_directories(${CMAKE_SOURCE_DIR}/openwater)
 add_subdirectory(${CMAKE_SOURCE_DIR}/openwater OpenWater)
 
-
-
-set(CHAPTERS
-    1.getting_started
-)
-
-set(1.getting_started
-    1.1.hello_window
-    1.2.hello_window_clear
-    2.1.hello_triangle
-    2.2.hello_triangle_indexed
-    2.3.hello_triangle_exercise1
-    2.4.hello_triangle_exercise2
-    2.5.hello_triangle_exercise3
-    3.1.shaders_uniform
-    3.2.shaders_interpolation
-    3.3.shaders_class
-    4.1.textures
-    4.2.textures_combined
-    4.3.textures_exercise2
-    4.4.textures_exercise3
-    4.5.textures_exercise4
-)
-
-# then create a project file per tutorial
-foreach(CHAPTER ${CHAPTERS})
-    foreach(DEMO ${${CHAPTER}})
-		file(GLOB SHADERS
-                 "test/${CHAPTER}/${DEMO}/*.vs"
-                 "test/${CHAPTER}/${DEMO}/*.fs"
-                 "test/${CHAPTER}/${DEMO}/*.gs"
-        )
-		file(GLOB DLLFILE 
-				"libs/*.dll"
-		)
-		file(GLOB ALLFILE
-			"test/${CHAPTER}/${DEMO}/*.h"
-            "test/${CHAPTER}/${DEMO}/*.cpp"
-			"test/${CHAPTER}/${DEMO}/*.vs"
-			 "test/${CHAPTER}/${DEMO}/*.fs"
-			 "test/${CHAPTER}/${DEMO}/*.gs"
-		)
-
-        set(NAME "${DEMO}")
-		#message(STATUS, ${NAME}, "工程名字")
-		message(STATUS, ${SHADERS}, "shader文件")
-        add_executable(${NAME} ${ALLFILE})
-        target_link_libraries(${NAME} ${LIBS})
-		add_dependencies(${NAME} glfw)		#添加工程编译依赖，不知道为啥glad默认关联了
-        
-		# copy shader files to build directory
-        add_custom_command(TARGET ${NAME} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E make_directory $<TARGET_FILE_DIR:${NAME}>)
-		set(RESBASEPATH $<TARGET_FILE_DIR:${NAME}>)
-		add_custom_command(TARGET ${NAME} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E make_directory "${RESBASEPATH}/resources")
-        foreach(SHADER ${SHADERS})
-			add_custom_command(TARGET ${NAME} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${SHADER} $<TARGET_FILE_DIR:${NAME}>)
-		endforeach(SHADER)
-		add_custom_command(TARGET ${NAME} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_SOURCE_DIR}/resources" "${RESBASEPATH}/resources")
-		
-    endforeach(DEMO)
-endforeach(CHAPTER)
+# 添加测试工程
+add_subdirectory(${CMAKE_SOURCE_DIR}/test)
 
