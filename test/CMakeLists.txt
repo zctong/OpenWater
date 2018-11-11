@@ -26,6 +26,15 @@ set(1.getting_started
     4.3.textures_exercise2
     4.4.textures_exercise3
     4.5.textures_exercise4
+    5.1.transformations
+    5.2.transformations_exercise2
+    6.1.coordinate_systems
+    6.2.coordinate_systems_depth
+    6.3.coordinate_systems_multiple
+    7.1.camera_circle
+    7.2.camera_keyboard_dt
+    7.3.camera_mouse_zoom
+    7.4.camera_class
 )
 
 # then create a project file per tutorial
