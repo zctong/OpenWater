@@ -9,3 +9,5 @@
 - [Hello Transformations](http://note.youdao.com/noteshare?id=2e980aed5740c15b55d29ea56046d4c1&sub=787A7FFFB8A44FF0ADD14775E09405A9)
 - [Hello Coordinate Systems](http://note.youdao.com/noteshare?id=54174f72d0d46791e721c51abb1735d9&sub=2CB5EDDD4DFE44DF9E6C583183988F95)
 - [Hello Camera](http://note.youdao.com/noteshare?id=2a97474b13b3c94b4fded3ed28af1d6d&sub=F3EC3E0EF52E4E04B906229BB1C4FDD6)
+- [Hello Materials](http://note.youdao.com/noteshare?id=93d0effd4702ddb351cd58371dc8346b)
+- [Hello Lighting maps](http://note.youdao.com/noteshare?id=93d2ff78a3b2bcc10225f8a443370ed1)
