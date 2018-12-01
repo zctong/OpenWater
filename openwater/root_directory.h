@@ -1,1 +1,1 @@
-const char * logl_root = "F:/github/OpenWater";
+const char * logl_root = "/Users/zhangchaotong/Learn/github/OpenWater";
